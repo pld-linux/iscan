@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Iscan
+Comment=Scan Program for Epson scaners
+Comment[pl]=Program do skanowania dla skanerów Epsona
+Exec=iscan
+Icon=scanner
+Terminal=false
+Type=Application
+Categories=KDE;Graphics;Scanning;
+Encoding=UTF-8
+# vi: encoding=utf-8
