@@ -168,7 +168,7 @@ fi
 %attr(755,root,root) %{_libdir}/libesmod.so.*.*.*
 %{_sysconfdir}/hotplug/usb/iscan*
 %{_mandir}/man*/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 
 %files sane-epkowa
 %defattr(644,root,root,755)
