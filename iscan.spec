@@ -1,5 +1,5 @@
 Summary:	SANE backend for SEIKO EPSON scanners and all-in-ones
-Summary(pl):	Backend SANE dla skanerów SEIKO EPSON i urz±dzeñ wielofunkcyjnych
+Summary(pl.UTF-8):   Backend SANE dla skanerÃ³w SEIKO EPSON i urzÄ…dzeÅ„ wielofunkcyjnych
 Name:		iscan
 Version:	2.0.0
 Release:	1
@@ -60,9 +60,9 @@ The iscan program supports the following scanners:
  - AcuLaser CX11
 
 
-%description -l pl
-Iscan to aplikacja umo¿liwiaj±ca ³atwe skanowanie przy u¿yciu
-bibliotek SANE. Program obs³uguje nastêpuj±ce skanery:
+%description -l pl.UTF-8
+Iscan to aplikacja umoÅ¼liwiajÄ…ca Å‚atwe skanowanie przy uÅ¼yciu
+bibliotek SANE. Program obsÅ‚uguje nastÄ™pujÄ…ce skanery:
 
  Seiko Epson Flatbed Scanner
  - Perfection 610
@@ -102,14 +102,14 @@ bibliotek SANE. Program obs³uguje nastêpuj±ce skanery:
 
 %package sane-epkowa
 Summary:	An improved driver for EPSON scanners
-Summary(pl):	Udoskonalone sterowniki dla skanerów EPSON
+Summary(pl.UTF-8):   Udoskonalone sterowniki dla skanerÃ³w EPSON
 Group:		Libraries
 
 %description sane-epkowa
 An improved driver for EPSON scanners.
 
-%description sane-epkowa -l pl
-Udoskonalone sterowniki dla skanerów EPSON.
+%description sane-epkowa -l pl.UTF-8
+Udoskonalone sterowniki dla skanerÃ³w EPSON.
 
 %prep
 %setup -q
