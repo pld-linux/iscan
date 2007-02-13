@@ -1,5 +1,5 @@
 Summary:	SANE backend for SEIKO EPSON scanners and all-in-ones
-Summary(pl.UTF-8):   Backend SANE dla skanerów SEIKO EPSON i urządzeń wielofunkcyjnych
+Summary(pl.UTF-8):	Backend SANE dla skanerów SEIKO EPSON i urządzeń wielofunkcyjnych
 Name:		iscan
 Version:	2.0.0
 Release:	1
@@ -102,7 +102,7 @@ bibliotek SANE. Program obsługuje następujące skanery:
 
 %package sane-epkowa
 Summary:	An improved driver for EPSON scanners
-Summary(pl.UTF-8):   Udoskonalone sterowniki dla skanerów EPSON
+Summary(pl.UTF-8):	Udoskonalone sterowniki dla skanerów EPSON
 Group:		Libraries
 
 %description sane-epkowa
