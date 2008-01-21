@@ -1,16 +1,17 @@
 Summary:	SANE backend for SEIKO EPSON scanners and all-in-ones
 Summary(pl.UTF-8):	Backend SANE dla skanerów SEIKO EPSON i urządzeń wielofunkcyjnych
 Name:		iscan
-Version:	2.0.0
+Version:	2.10.0
 Release:	1
 License:	GPL (with exception clauses) and EAPL
 Group:		X11/Applications/Graphics
-Source0:	http://lx1.avasys.jp/iscan/%{version}/%{name}-%{version}-0.tar.gz
-# Source0-md5:	a9fd56f754eeac51fcc403f09b1d606d
+Source0:	http://lx1.avasys.jp/iscan/%{version}/%{name}_%{version}-1.tar.gz
+# Source0-md5:	8e44dac50f51b4c0a2f2e60624edfedb
 Source1:	%{name}.desktop
 BuildRequires:	gimp-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libjpeg-devel
+BuildRequires:	libltdl-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libusb-devel >= 0.1.6
 BuildRequires:	sane-backends-devel
@@ -36,29 +37,46 @@ The iscan program supports the following scanners:
  - Perfection 3200 PHOTO
  - Perfection 4870 PHOTO
  - Perfection 4990 PHOTO
+ - Perfection V700
+ - Perfection V750
  - Expression 1600
  - Expression 1680
  - Expression 1640XL
  - Expression 10000XL
+ - GT-2500
  - GT-10000/GT-10000+
  - GT-15000
  - GT-30000
+ - ME200
+ - Stylus CX2800/Stylus CX2900
  - Stylus CX3500/Stylus CX3600
  - Stylus CX3700/Stylus CX3800/Stylus DX3800
+ - Stylus CX3900/Stylus DX4000
+ - Stylus CX4100/Stylus CX4200/Stylus DX4200
  - Stylus CX4500/Stylus CX4600
+ - Stylus CX4700/Stylus CX4800/Stylus DX4800
+ - Stylus CX4900/Stylus CX5000/Stylus DX5000
  - Stylus CX5100/Stylus CX5200
  - Stylus CX5300/Stylus CX5400
+ - Stylus CX5900/Stylus CX6000/Stylus DX6000
  - Stylus CX6300/Stylus CX6400
  - Stylus CX6500/Stylus CX6600
+ - Stylus CX7300/Stylus CX7400/Stylus DX7400
  - Stylus CX7700/Stylus CX7800
+ - Stylus CX8300/Stylus CX8400/Stylus DX8400
+ - Stylus CX9300F/Stylus CX9400Fax/Stylus DX9400F
  - Stylus Photo RX420/Stylus Photo RX425/Stylus Photo RX430
  - Stylus Photo RX500/Stylus Photo RX510
  - Stylus Photo RX520/Stylus Photo RX530
- - Stylus Photo RX600/Stylus Photo RX610
+ - Stylus Photo RX560/Stylus Photo RX580/Stylus Photo RX590
+ - Stylus Photo RX600
  - Stylus Photo RX620/Stylus Photo RX630
+ - Stylus Photo RX640/Stylus Photo RX650
  - Stylus Photo RX700
+ - Stylus Photo RX585/Stylus Photo RX595/Stylus Photo RX610
+ - Stylus Photo RX680/Stylus Photo RX685/Stylus Photo RX690
  - AcuLaser CX11
-
+ - AcuLaser CX21
 
 %description -l pl.UTF-8
 Iscan to aplikacja umożliwiająca łatwe skanowanie przy użyciu
@@ -77,28 +95,46 @@ bibliotek SANE. Program obsługuje następujące skanery:
  - Perfection 3200 PHOTO
  - Perfection 4870 PHOTO
  - Perfection 4990 PHOTO
+ - Perfection V700
+ - Perfection V750
  - Expression 1600
  - Expression 1680
  - Expression 1640XL
  - Expression 10000XL
+ - GT-2500
  - GT-10000/GT-10000+
  - GT-15000
  - GT-30000
+ - ME200
+ - Stylus CX2800/Stylus CX2900
  - Stylus CX3500/Stylus CX3600
  - Stylus CX3700/Stylus CX3800/Stylus DX3800
+ - Stylus CX3900/Stylus DX4000
+ - Stylus CX4100/Stylus CX4200/Stylus DX4200
  - Stylus CX4500/Stylus CX4600
+ - Stylus CX4700/Stylus CX4800/Stylus DX4800
+ - Stylus CX4900/Stylus CX5000/Stylus DX5000
  - Stylus CX5100/Stylus CX5200
  - Stylus CX5300/Stylus CX5400
+ - Stylus CX5900/Stylus CX6000/Stylus DX6000
  - Stylus CX6300/Stylus CX6400
  - Stylus CX6500/Stylus CX6600
+ - Stylus CX7300/Stylus CX7400/Stylus DX7400
  - Stylus CX7700/Stylus CX7800
+ - Stylus CX8300/Stylus CX8400/Stylus DX8400
+ - Stylus CX9300F/Stylus CX9400Fax/Stylus DX9400F
  - Stylus Photo RX420/Stylus Photo RX425/Stylus Photo RX430
  - Stylus Photo RX500/Stylus Photo RX510
  - Stylus Photo RX520/Stylus Photo RX530
- - Stylus Photo RX600/Stylus Photo RX610
+ - Stylus Photo RX560/Stylus Photo RX580/Stylus Photo RX590
+ - Stylus Photo RX600
  - Stylus Photo RX620/Stylus Photo RX630
+ - Stylus Photo RX640/Stylus Photo RX650
  - Stylus Photo RX700
+ - Stylus Photo RX585/Stylus Photo RX595/Stylus Photo RX610
+ - Stylus Photo RX680/Stylus Photo RX685/Stylus Photo RX690
  - AcuLaser CX11
+ - AcuLaser CX21
 
 %package sane-epkowa
 Summary:	An improved driver for EPSON scanners
