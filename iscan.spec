@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	sane-backends-devel >= 1.0.15
 Requires:	iscan-sane-epkowa
 Requires:	sane-backends
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
