@@ -8,13 +8,16 @@ Group:		X11/Applications/Graphics
 Source0:	http://lx1.avasys.jp/iscan/%{version}/%{name}_%{version}-1.tar.gz
 # Source0-md5:	8e44dac50f51b4c0a2f2e60624edfedb
 Source1:	%{name}.desktop
+BuildRequires:	gettext-devel
 BuildRequires:	gimp-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libltdl-devel
 BuildRequires:	libpng-devel
+BuildRequires:	libstdc++-devel
 BuildRequires:	libusb-devel >= 0.1.6
-BuildRequires:	sane-backends-devel
+BuildRequires:	pkgconfig
+BuildRequires:	sane-backends-devel >= 1.0.15
 Requires:	iscan-sane-epkowa
 Requires:	sane-backends
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
