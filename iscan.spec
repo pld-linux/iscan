@@ -8,7 +8,7 @@ Group:		X11/Applications/Graphics
 Source0:	http://lx1.avasys.jp/iscan/%{version}/%{name}_%{version}-1.tar.gz
 # Source0-md5:	8e44dac50f51b4c0a2f2e60624edfedb
 Source1:	%{name}.desktop
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gimp-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libjpeg-devel
